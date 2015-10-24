@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2013 – 2015 Ricki Hirner (bitfire web engineering).
+  ~ All rights reserved. This program and the accompanying materials
+  ~ are made available under the terms of the GNU Public License v3.0
+  ~ which accompanies this distribution, and is available at
+  ~ http://www.gnu.org/licenses/gpl.html
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp"
+            tools:context=".MainActivity"
+    android:onClick="getapp"
+    android:background="@drawable/helpbackground">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setup_install_apps_info"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:layout_x="17dp"
+        android:layout_y="89dp"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textIsSelectable="false"
+        android:textColor="#000000"
+        android:gravity="center" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:background="@drawable/installicon"
+        android:onClick="getapp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/press_here_to_install"
+        android:id="@+id/textView7"
+        android:textColor="#333333"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/imageButton2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:text="@string/skip"
+        android:id="@+id/button3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:nestedScrollingEnabled="true"
+        android:onClick="onSkipClick" />
+
+</RelativeLayout>
